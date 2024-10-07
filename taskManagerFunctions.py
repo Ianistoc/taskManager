@@ -3,4 +3,8 @@ def addTask(taskName:str, list:list):
     1st value: task number
     2nd value: task name
     3rd value: task completion (False = uncompleted ; True = completed)'''
-    list.append([str(len(list)+1), taskName, False])
+    list.append([len(list)+1, taskName, False])
+def completeTask(list:list, taskNumberSearch:int):
+    for element in list:
+        if element[0] == taskNumberSearch:
+            element[2] = True
