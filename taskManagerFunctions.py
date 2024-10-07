@@ -8,3 +8,8 @@ def completeTask(list:list, taskNumberSearch:int):
     for element in list:
         if element[0] == taskNumberSearch:
             element[2] = True
+def boolToReadable(boolean:bool):
+    if boolean:
+        return "Completed"
+    else:
+        return "Not completed"
